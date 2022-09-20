@@ -1,5 +1,5 @@
 # Encoder-Decoder with Attention 
-[Cho et al.]() and [Sutskever et al.]() presented the encoder-decoder architecture that could encode __variable-length vector__(e.g sentance in English with 10 words) into vector __fixed length vector__(context vector)
+[Cho et al.](https://arxiv.org/abs/1406.1078) and [Sutskever et al.](https://arxiv.org/abs/1409.3215) presented the encoder-decoder architecture that could encode __variable-length vector__(e.g sentance in English with 10 words) into vector __fixed length vector__(context vector)
 and decode it into __variable-length vector__(e.g German sentance with 6 words).
 
 This approach is based on the bottleneck representation, which contains information from all the previous state, but when the sequence is long enough, initial informations are getting discarded and lost.
@@ -9,7 +9,7 @@ This approach is based on the bottleneck representation, which contains informat
 ### Architecture:
 
 <p align="center">
-    <img src="https://github.com/maciejbalawejder/DeepLearning-collection/blob/main/NLP/Encoder-Decoder%20GRU%20with%20Attention/architecture.png">
+    <img src="https://github.com/maciejbalawejder/NLP_Translations/tree/master/Encoder-Decoder%20GRU%20with%20Attention.architecture.png">
 </p>
 
 __Encoder:__
@@ -57,7 +57,7 @@ I leave also leave bunch of tricks for the implementation that might make it eas
 
 5) __Attention layer__ input is concatenated [__s<sub>t-1</sub>__, __h__] and passed through __ReLU function__
 
-6) All the shapes after calculations are described in [seq2seqattetion.py](https://github.com/maciejbalawejder/DeepLearning-collection/blob/main/NLP/Encoder-Decoder%20GRU%20with%20Attention/seq2seqattention.py) 
+6) All the shapes after calculations are described in [seq2seqattetion.py](https://github.com/maciejbalawejder/NLP_Translations/tree/master/Encoder-Decoder%20GRU%20with%20Attention/seq2seqattetion.py) 
 
 -------
 
@@ -88,7 +88,7 @@ P = 0.5 # Dropout rate encoder 0.5 , decoder 0.1
 ------
 ### Results
 #### 1) Loss
-![](https://github.com/maciejbalawejder/DeepLearning-collection/blob/main/NLP/Encoder-Decoder%20GRU%20with%20Attention/loss.png)
+![](https://github.com/maciejbalawejder/NLP_Translations/tree/master/Encoder-Decoder%20GRU%20with%20Attention/loss.png)
 #### 2) Bleu score = 22.5 = ["The gist is clear, but has significant grammatical errors"](https://cloud.google.com/translate/automl/docs/evaluate)
 #### 3) Translation examples:
 ```
