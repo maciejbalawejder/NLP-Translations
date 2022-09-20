@@ -9,7 +9,7 @@ This approach is based on the bottleneck representation, which contains informat
 ### Architecture:
 
 <p align="center">
-    <img src="https://github.com/maciejbalawejder/NLP_Translations/tree/master/Encoder-Decoder%20GRU%20with%20Attention.architecture.png">
+    <img src="https://github.com/maciejbalawejder/NLP_Translations/blob/master/Encoder-Decoder%20GRU%20with%20Attention/architecture.png">
 </p>
 
 __Encoder:__
@@ -88,7 +88,7 @@ P = 0.5 # Dropout rate encoder 0.5 , decoder 0.1
 ------
 ### Results
 #### 1) Loss
-![](https://github.com/maciejbalawejder/NLP_Translations/tree/master/Encoder-Decoder%20GRU%20with%20Attention/loss.png)
+![](https://github.com/maciejbalawejder/NLP_Translations/blob/master/Encoder-Decoder%20GRU%20with%20Attention/loss.png)
 #### 2) Bleu score = 22.5 = ["The gist is clear, but has significant grammatical errors"](https://cloud.google.com/translate/automl/docs/evaluate)
 #### 3) Translation examples:
 ```
