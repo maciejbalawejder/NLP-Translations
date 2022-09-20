@@ -3,7 +3,7 @@
 The model encoder-decoder RNN was introduced by [Cho et al.](https://arxiv.org/pdf/1406.1078.pdf) and [Sutskever et al.](https://arxiv.org/pdf/1409.3215.pdf). The main goal was to map two sequences of different lengths. It is especially important in __translation__, where for example sentance in English can have 10 words, but when it is translated to German it only has 6. This papers proved that it is possible and this approach can surpass the previous state-of-the-art performance level. 
 ### Architecture:
 
-![Model](https://github.com/maciejbalawejder/DeepLearning-collection/blob/main/NLP/Encoder-Decoder%20LSTM/imgs/model.jpeg)
+![Model](https://github.com/maciejbalawejder/NLP_Translations/blob/master/Encoder-Decoder%20LSTM/imgs/model.jpeg)
 
 -----
 
@@ -47,7 +47,7 @@ dataset_size = 10_000
 
 ### Results
 #### 1) Loss
-![Loss](https://github.com/maciejbalawejder/DeepLearning-collection/blob/main/NLP/Encoder-Decoder%20LSTM/imgs/loss.png) 
+![Loss](https://github.com/maciejbalawejder/NLP_Translations/blob/master/Encoder-Decoder%20LSTM/imgs/loss.png) 
 #### 2) Bleu score = 19.2 = ["Hard to get the gist"](https://cloud.google.com/translate/automl/docs/evaluate)
 #### 3) Translations example
 ```
